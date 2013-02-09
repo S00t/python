@@ -16,7 +16,6 @@ def quick(list,counter=0):
     pivot = list[0]
     
     L = quick([x for x in list[1:] if x < pivot])
-     
     R = quick([x for x in list[1:]  if x >= pivot])
     
     counter = counter + 1
@@ -28,4 +27,3 @@ d = list
 print "Przed posortowaniem : \n", d,"\n" 
 g = quick(d)
 print "Po posortowaniu : \n",  g,"\n"
-print "liczba przestawien w L %d"%(len(g))
